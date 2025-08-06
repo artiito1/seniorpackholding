@@ -35,7 +35,7 @@ const subsidiaries = [
                <Logo />
             </div>
             <div className="mr-3 hidden sm:block">
-              <h1 className="text-[#321b12] font-bold text-lg lg:text-xl">Senior Holding Compunay</h1>
+              <h1 className="text-[#321b12] font-bold text-lg lg:text-xl">Senior Holding Company</h1>
               <p className="text-[#936e2a] text-xs lg:text-sm">تجربة متكاملة للمنتجات</p>
             </div>
           </div>

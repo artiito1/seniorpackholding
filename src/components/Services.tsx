@@ -3,17 +3,25 @@
 import React, { useState } from 'react';
 import { Palette, Package, Globe, Printer, Share2, ArrowLeft, Check } from 'lucide-react';
 
+// Define the type for category keys
+type CategoryKey = 'design' | 'production' | 'digital' | 'marketing';
+
 const Services = () => {
-  const [activeCategory, setActiveCategory] = useState('design');
+  const [activeCategory, setActiveCategory] = useState<CategoryKey>('design');
 
   const categories = [
-    { id: 'design', label: 'تصميم', icon: Palette },
-    { id: 'production', label: 'تنفيذ', icon: Package },
-    { id: 'digital', label: 'رقمي', icon: Globe },
-    { id: 'marketing', label: 'تسويق', icon: Share2 }
+    { id: 'design' as CategoryKey, label: 'تصميم', icon: Palette },
+    { id: 'production' as CategoryKey, label: 'تنفيذ', icon: Package },
+    { id: 'digital' as CategoryKey, label: 'رقمي', icon: Globe },
+    { id: 'marketing' as CategoryKey, label: 'تسويق', icon: Share2 }
   ];
 
-  const services = {
+  const services: Record<CategoryKey, Array<{
+    title: string;
+    description: string;
+    features: string[];
+    company: string;
+  }>> = {
     design: [
       {
         title: 'تصميم المنتجات',

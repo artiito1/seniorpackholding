@@ -85,8 +85,8 @@ useEffect(() => {
         const x = event.beta || 0;   // -180 إلى 180
         const y = event.gamma || 0;  // -90 إلى 90
 
-        const normX = Math.max(Math.min(x, 50), -50)*4;
-        const normY = Math.max(Math.min(y, 50), -50)*3;
+        const normX = Math.max(Math.min(x, 50), -50)*6;
+        const normY = Math.max(Math.min(y, 50), -50)*6;
 
         setMousePos({ x: normY + 50, y: normX + 50 });
       };
@@ -150,12 +150,12 @@ useEffect(() => {
                 `}
               />
 
-              {hoveredImage === slot.id && (
+              {/* {hoveredImage === slot.id && (
                 <>
                   <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white to-transparent opacity-20 rounded-xl animate-pulse" />
                   <div className="absolute inset-0 border-2 border-gradient-to-r from-blue-400 to-purple-400 rounded-xl animate-pulse" />
                 </>
-              )}
+              )} */}
             </div>
           </div>
         ))}

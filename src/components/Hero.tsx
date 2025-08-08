@@ -230,8 +230,8 @@ const Hero = () => {
 
       {/* العنوان الرئيسي */}
       <div className="absolute z-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-        <h1 className="text-gold-gradient text-7xl font-bold mb-4 drop-shadow-lg">Senior Pack</h1>
-        <p className="text-white text-xl font-medium">Experience Excellence</p>
+        <h1 className="text-gold-gradient text-9xl font-extrabold mb-4 drop-shadow-lg">Senior Pack</h1>
+        <p className="text-white text-lg font-light tracking-[0.4em]">Experience Excellence</p>
       </div>
 
       {/* طبقة شفافة لإعطاء عمق للعنوان */}

@@ -110,15 +110,14 @@ const Services = () => {
   return (
     <section id="services" className="py-8 lg:py-4 bg-[#1c1c1c] bg-[url('/images/paper-texture-dark.png')] bg-cover bg-center bg-fixed">
           <div className="container mx-auto px-4 lg:px-6">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-5xl font-bold text-gold-gradient mb-6">
+            <div className="mb-8 text-gold-gradient">
+              <h2 className="text-2xl lg:text-3xl font-bold mb-6">
                 خدماتنا
               </h2>
-              <p className="text-lg lg:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-lg lg:text-xl text-gray-400 max-w-3xl leading-relaxed">
                 نقدم مجموعة شاملة من الخدمات المتخصصة في الطباعة، التصميم، الديكور، التسويق، التصوير، النمذجة ثلاثية الأبعاد، والبرمجة
               </p>
             </div>
-
             {/* Category Navigation */}
             <div className="flex flex-wrap justify-center gap-4 mb-12">
               {categories.map((category) => (
@@ -181,42 +180,41 @@ const Services = () => {
             </div>
 
             {/* Process Flow */}
-            <div className="mt-8 bg-gradient-to-br from-[#ffe2a6]/30 to-[#936e2a]/30 rounded-3xl p-8 lg:p-12 shadow-lg">
+            <div className="mt-8 bg-gradient-to-br from-[#ffe2a6]/30 to-[#936e2a]/30 rounded-3xl p-8 lg:p-12 shadow-lg mb-8">
               <h3 className="text-2xl lg:text-3xl font-bold text-gray-300 text-center mb-12">
                 مراحل العمل في سينيور باك
               </h3>
-              
               <div className="grid md:grid-cols-4 gap-8">
                 <div className="text-center group">
                   <div className="w-16 h-16 bg-gradient-to-br from-[#936e2a]/70 to-[#ffe2a6]/70 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                     <span className="text-white font-bold text-xl">1</span>
                   </div>
-                  <h4 className="font-bold text-[#321b12] mb-2">دراسة المشروع</h4>
-                  <p className="text-gray-600 text-sm">فهم احتياجاتك ومتطلبات المشروع بدقة</p>
+                  <h4 className="font-bold text-[#ffe2a6]/70 mb-2">دراسة المشروع</h4>
+                  <p className="text-gray-300 text-sm">فهم احتياجاتك ومتطلبات المشروع بدقة</p>
                 </div>
 
                 <div className="text-center group">
                   <div className="w-16 h-16 bg-gradient-to-br from-[#936e2a]/70 to-[#ffe2a6]/70 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                     <span className="text-white font-bold text-xl">2</span>
                   </div>
-                  <h4 className="font-bold text-[#321b12] mb-2">التصميم الإبداعي</h4>
-                  <p className="text-gray-600 text-sm">إنشاء تصاميم مبتكرة تلبي توقعاتك</p>
+                  <h4 className="font-bold text-[#ffe2a6]/70 mb-2">التصميم الإبداعي</h4>
+                  <p className="text-gray-300 text-sm">إنشاء تصاميم مبتكرة تلبي توقعاتك</p>
                 </div>
 
                 <div className="text-center group">
                   <div className="w-16 h-16 bg-gradient-to-br from-[#936e2a]/70 to-[#ffe2a6]/70 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                     <span className="text-white font-bold text-xl">3</span>
                   </div>
-                  <h4 className="font-bold text-[#321b12] mb-2">التنفيذ المتميز</h4>
-                  <p className="text-gray-600 text-sm">تنفيذ المشروع بأعلى معايير الجودة</p>
+                  <h4 className="font-bold text-[#ffe2a6]/70 mb-2">التنفيذ المتميز</h4>
+                  <p className="text-gray-300 text-sm">تنفيذ المشروع بأعلى معايير الجودة</p>
                 </div>
 
                 <div className="text-center group">
                   <div className="w-16 h-16 bg-gradient-to-br from-[#936e2a]/70 to-[#ffe2a6]/70 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                     <span className="text-white font-bold text-xl">4</span>
                   </div>
-                  <h4 className="font-bold text-[#321b12] mb-2">التسليم والدعم</h4>
-                  <p className="text-gray-600 text-sm">تسليم في الوقت المحدد مع دعم مستمر</p>
+                  <h4 className="font-bold text-[#ffe2a6]/70 mb-2">التسليم والدعم</h4>
+                  <p className="text-gray-300 text-sm">تسليم في الوقت المحدد مع دعم مستمر</p>
                 </div>
               </div>
             </div>

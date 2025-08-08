@@ -1,17 +1,21 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Cairo } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ 
-  subsets: ['latin'],
+const cairo = Cairo({ 
+  subsets: ['arabic'],
   display: 'swap',
+  variable: '--font-cairo',
 })
 
 export const metadata: Metadata = {
-  title: 'شركة الهولدينغ - تجربة متكاملة للمنتجات',
-  description: 'شركة هولدينغ متخصصة في تصميم تجربة المستخدم الشاملة للمنتجات المادية والرقمية - من الفكرة إلى السوق',
+  title: 'شركة سينيور باك - تجربة متكاملة للمنتجات',
+  description: 'شركة سينيور باك متخصصة في تصميم تجربة المستخدم الشاملة للمنتجات المادية والرقمية - من الفكرة إلى السوق',
   keywords: 'تصميم المنتجات, تصميم التغليف, مواقع إلكترونية, تطبيقات, هوية بصرية, طباعة',
-  authors: [{ name: 'شركة الهولدينغ' }]
+  authors: [{ name: 'شركة سينيور باك' }],
+  icons: {
+    icon: '/images/logo.png',
+  },
 }
 export const viewport = {
   width: 'device-width',
@@ -25,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ar" dir="rtl">
-      <body className={inter.className}>{children}</body>
+      <body className={cairo.className}>{children}</body>
     </html>
   )
 }

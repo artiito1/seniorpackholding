@@ -110,26 +110,12 @@ const subsidiaries = [
                   size="sm"
                   className="w-full group-hover:border-primary group-hover:text-primary transition-colors"
                 >
-                  تواصل مع الشركة
+                  إعرف أكثر عن الشركة
                   <ExternalLink className="mr-2 h-4 w-4" />
                 </Button>
               </CardContent>
             </Card>
           ))}
-        </div>
-
-        {/* Integration Message */}
-        <div className="bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl p-8 lg:p-12 text-center border border-primary/20">
-          <h3 className="text-2xl lg:text-3xl font-bold mb-4">
-            التكامل هو سر قوتنا
-          </h3>
-          <p className="text-lg text-muted-foreground mb-6 max-w-2xl mx-auto">
-            هذه الشركات لا تعمل بشكل منفصل، بل تتعاون في مشاريع موحدة لتقديم 
-            حلول متكاملة تضمن التناسق والجودة العالية في كل مرحلة من مراحل العمل
-          </p>
-          <Button className="btn-gold">
-            اطلب مشروع متكامل
-          </Button>
         </div>
       </div>
     </section>

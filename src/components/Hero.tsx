@@ -140,7 +140,7 @@ useEffect(() => {
                 width={isMobile ? 80 : 120}
                 height={isMobile ? 80 : 120}
                 className={`
-                  rounded-xl object-cover shadow-lg shadow-[0_4px_15px_rgba(255,215,0,0.6)] transition-all duration-300
+                  rounded-xl object-cover shadow-lg shadow-[rgba(255,215,0,0.6)] transition-all duration-300
                   ${hoveredImage === slot.id 
                     ? 'scale-110 shadow-2xl ring-4 ring-white ring-opacity-60 brightness-110 saturate-110' 
                     : 'scale-100 hover:scale-105'}

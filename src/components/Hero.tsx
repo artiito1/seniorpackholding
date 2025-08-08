@@ -85,8 +85,8 @@ useEffect(() => {
         const x = event.beta || 0;   // -180 إلى 180
         const y = event.gamma || 0;  // -90 إلى 90
 
-        const normX = Math.max(Math.min(x, 50), -50)*6;
-        const normY = Math.max(Math.min(y, 50), -50)*6;
+        const normX = Math.max(Math.min(x, 50), -50)*12;
+        const normY = Math.max(Math.min(y, 50), -50)*12;
 
         setMousePos({ x: normY + 50, y: normX + 50 });
       };

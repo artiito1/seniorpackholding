@@ -24,91 +24,108 @@ const Services = () => {
     title: string;
     description: string;
     features: string[];
+    bgUrl: string;
   }>> = {
     printing: [
       {
         title: 'طباعة مواد التعبئة والتغليف',
         description: 'طباعة عالية الجودة للمواد المرنة والصلبة للمنتجات الغذائية والاستهلاكية',
-        features: ['طباعة البقوليات والشيبس', 'طباعة البسكويت والقهوة', 'ألوان نابضة بالحياة', 'وضوح نصي دقيق']
+        features: ['طباعة الاكياس', 'طباعة الكرتون', 'طباعة ملصقات العبوات المعدنية', 'وضوح نصي دقيق'],
+        bgUrl: '/images/printing-bg.jpg'
       },
-      {
-        title: 'طباعة الملصقات والكرتون',
-        description: 'خدمات طباعة شاملة للملصقات والعبوات الكرتونية بجودة عالية',
-        features: ['ملصقات المنظفات', 'ملصقات المعلبات الغذائية', 'كرتون المنتجات الغذائية', 'التسليم في الوقت المناسب']
-      }
     ],
     graphics: [
       {
         title: 'تصميم الجرافيك والهوية البصرية',
         description: 'تحويل الأفكار إلى مرئيات مؤثرة تعزز الهوية المؤسسية للعلامات التجارية',
-        features: ['تصميم الشعارات', 'اختيار الألوان', 'تطوير الهوية المؤسسية', 'التميز في المجتمع']
+        features: ['تصميم الشعارات', 'اختيار الألوان', 'تطوير الهوية المؤسسية', 'التميز في المجتمع'],
+        bgUrl: '/images/graphics-bg.jpg'
       },
       {
         title: 'تصميم التعبئة والتغليف',
         description: 'تصميم إبداعي للتغليف كأداة تسويقية رئيسية تضمن وصول رسالة العلامة التجارية',
-        features: ['تصميم عبوات مبتكرة', 'مرئيات مقنعة', 'رسائل تجارية واضحة', 'تعزيز المبيعات']
+        features: ['تصميم عبوات مبتكرة', 'مرئيات مقنعة', 'رسائل تجارية واضحة', 'تعزيز المبيعات'],
+        bgUrl: '/images/about/packaging.png'
       }
     ],
     decoration: [
       {
         title: 'تنفيذ المعارض',
         description: 'تصميم وتنفيذ أجنحة المعارض بإبداع واحترافية وإدارة متميزة',
-        features: ['تنظيم إبداعي', 'إدارة احترافية', 'أسعار تنافسية', 'تنفيذ دقيق ومتميز']
+        features: [
+      'تصاميم مبتكرة ومخصصة لكل عميل',
+      'إدارة وتنظيم كامل لعملية التنفيذ',
+      'خيارات تناسب مختلف الميزانيات',
+      'تشطيبات عالية الجودة ودقة في التفاصيل'
+    ],
+        bgUrl: '/images/exhibition-bg.jpg'
       },
       {
         title: 'التصميم الداخلي',
         description: 'تحويل المساحات الداخلية للمنازل والمؤسسات التعليمية وأماكن العمل',
-        features: ['تحسين المظهر الجمالي', 'بيئة مريحة وآمنة', 'حلول تجارية وسكنية', 'جوانب عملية وتقنية']
+        features: [
+      'تصاميم جمالية متناسقة مع المساحة',
+      'خلق بيئة مريحة وآمنة للاستخدام',
+      'حلول عملية تناسب الاستخدام التجاري أو السكني',
+      'دمج أحدث التقنيات في التصميم والتشطيب'
+    ],
+        bgUrl: '/images/interior-bg.jpg'
       }
     ],
     marketing: [
       {
         title: 'تحسين محركات البحث (SEO)',
         description: 'تحسين ترتيب موقعك في محركات البحث باستخدام استراتيجيات متقدمة',
-        features: ['كلمات رئيسية استراتيجية', 'تحسين الظهور', 'زيادة الزيارات', 'تحليل الأداء']
+        features: ['كلمات رئيسية استراتيجية', 'تحسين الظهور', 'زيادة الزيارات', 'تحليل الأداء'],
+        bgUrl: '/images/seo-bg.jpg'
       },
       {
         title: 'إدارة وسائل التواصل الاجتماعي',
         description: 'تعزيز التواجد الرقمي وإنشاء محتوى جذاب لجذب العملاء',
-        features: ['إدارة المنصات الاجتماعية', 'محتوى جذاب', 'استشارات تسويقية مبتكرة', 'زيادة التفاعل']
+        features: ['إدارة المنصات الاجتماعية', 'محتوى جذاب', 'استشارات تسويقية مبتكرة', 'زيادة التفاعل'],
+        bgUrl: '/images/social-media-bg.jpg'
       }
     ],
     photography: [
       {
         title: 'تصوير المنتجات',
         description: 'تصوير احترافي يبرز جمالية المنتجات ويعزز جاذبيتها التسويقية',
-        features: ['لقطات ذكية ومبتكرة', 'إضاءة احترافية', 'تعزيز المبيعات', 'مناسب للمتاجر الإلكترونية']
+        features: ['لقطات ذكية ومبتكرة', 'إضاءة احترافية', 'تعزيز المبيعات', 'مناسب للمتاجر الإلكترونية'],
+        bgUrl: '/images/product-photography-bg.jpg'
       }
     ],
     threed: [
       {
         title: 'النمذجة ثلاثية الأبعاد',
         description: 'إنشاء تمثيل رقمي ثلاثي الأبعاد للكائنات باستخدام أحدث البرامج المتخصصة',
-        features: ['عرض الحجم والشكل', 'إظهار الملمس والتفاصيل', 'تصميمات حقيقية ومفاهيمية', 'نماذج رقمية متقدمة']
+        features: ['عرض الحجم والشكل', 'إظهار الملمس والتفاصيل', 'تصميمات حقيقية ومفاهيمية', 'نماذج رقمية متقدمة'],
+        bgUrl: '/images/3d-modeling-bg.jpg'
       }
     ],
     programming: [
       {
         title: 'تصميم وبرمجة المواقع',
         description: 'إنشاء مواقع ويب قوية تقنياً وجذابة بصرياً مع خدمات الإدارة والصيانة',
-        features: ['مواقع متجاوبة', 'تطوير التطبيقات', 'إدارة وصيانة', 'تصدر نتائج البحث', 'تحسين تجربة المستخدم']
+        features: ['مواقع متجاوبة', 'تطوير التطبيقات', 'إدارة وصيانة', 'تصدر نتائج البحث', 'تحسين تجربة المستخدم'],
+        bgUrl: '/images/web-development-bg.jpg'
       },
       {
         title: 'الخدمات التقنية المتكاملة',
         description: 'حلول شاملة تشمل الاستضافة وإعلانات جوجل وأرشفة المواقع',
-        features: ['استضافة البريد الاحترافية', 'إدارة إعلانات جوجل', 'أرشفة محركات البحث', 'تركيب وتخصيص الأنظمة','حجز أسم لموقع الشركة']
+        features: ['استضافة البريد الاحترافية', 'إدارة إعلانات جوجل', 'أرشفة محركات البحث', 'تركيب وتخصيص الأنظمة','حجز أسم لموقع الشركة'],
+        bgUrl: '/images/tech-services-bg.jpg'
       }
     ]
   };
 
   return (
-    <section id="services" className="py-16 lg:py-24 bg-gray-50">
+    <section id="services" className="py-16 lg:py-24 bg-[#1c1c1c] bg-[url('/images/paper-texture-dark.png')] bg-cover bg-center bg-fixed">
           <div className="container mx-auto px-4 lg:px-6">
             <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-5xl font-bold text-[#321b12] mb-6">
+              <h2 className="text-3xl lg:text-5xl font-bold text-gold-gradient mb-6">
                 خدماتنا
               </h2>
-              <p className="text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-lg lg:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
                 نقدم مجموعة شاملة من الخدمات المتخصصة في الطباعة، التصميم، الديكور، التسويق، التصوير، النمذجة ثلاثية الأبعاد، والبرمجة
               </p>
             </div>
@@ -134,33 +151,43 @@ const Services = () => {
             {/* Services Grid */}
             <div className="grid md:grid-cols-2 gap-8">
               {services[activeCategory].map((service, index) => (
-                <div key={index} className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 group">
-                  <h3 className="text-2xl font-bold text-[#321b12] mb-4 group-hover:text-[#936e2a] transition-colors duration-300">
-                    {service.title}
-                  </h3>
-                  <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                    {service.description}
-                  </p>
-                  
-                  <div className="mb-6">
-                    <h4 className="font-semibold text-[#321b12] mb-3">المميزات الرئيسية:</h4>
-                    <ul className="space-y-2">
-                      {service.features.map((feature, featureIndex) => (
-                        <li key={featureIndex} className="flex items-center text-gray-600">
-                          <Check className="w-4 h-4 text-[#936e2a] ml-2 flex-shrink-0" />
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+                <div
+                  key={index}
+                  className="relative rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 group bg-cover bg-center"
+                >
+                  {/* طبقة اللون الخفيف */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#ffe2a6]/30 to-[#936e2a]/30 rounded-2xl"></div>
 
-                  <div className="border-t border-gray-100 pt-4 flex items-center justify-end">
-                    <button className="flex items-center text-[#936e2a] hover:text-[#321b12] font-semibold group-hover:translate-x-1 transition-all duration-300">
-                      تواصل معنا
-                      <ArrowLeft className="w-4 h-4 mr-2" />
-                    </button>
+                  {/* المحتوى فوق الطبقة */}
+                  <div className="relative z-10">
+                    <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-[#ffe2a6] transition-colors duration-300">
+                      {service.title}
+                    </h3>
+                    <p className="text-white/90 text-lg leading-relaxed mb-6">
+                      {service.description}
+                    </p>
+
+                    <div className="mb-6">
+                      <h4 className="font-semibold text-white mb-3">المميزات الرئيسية:</h4>
+                      <ul className="space-y-2">
+                        {service.features.map((feature, featureIndex) => (
+                          <li key={featureIndex} className="flex items-center text-white/90">
+                            <Check className="w-4 h-4 text-[#ffe2a6] ml-2 flex-shrink-0" />
+                            {feature}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+
+                    <div className="border-t border-white/20 pt-4 flex items-center justify-end">
+                      <button className="flex items-center text-[#ffe2a6] hover:text-white font-semibold group-hover:translate-x-1 transition-all duration-300">
+                        تواصل معنا
+                        <ArrowLeft className="w-4 h-4 mr-2" />
+                      </button>
+                    </div>
                   </div>
                 </div>
+
               ))}
             </div>
 

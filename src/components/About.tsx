@@ -28,29 +28,29 @@ const About = () => {
   // ];
 
   return (
-    <section id="about" className="py-16 lg:pt-24 lg:pb-5 bg-gray-50 ">
+    <section id="about" className="py-16 lg:py-24 bg-[#1c1c1c] bg-[url('/images/paper-texture-dark.png')] bg-cover bg-center bg-fixed">
       <div className="container mx-auto px-4 lg:px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-5xl font-bold text-[#321b12] mb-6">
+          <h2 className="text-3xl lg:text-5xl font-bold text-gold-gradient mb-6">
             من نحن
           </h2>
-          <p className="text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg lg:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
           سينيور باك | حلول التصميم الشاملة للمنتجات المادية والرقمية
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-16">
           <div>
-            <h3 className="text-2xl lg:text-3xl font-bold text-[#321b12] mb-6">
+            <h3 className="text-2xl lg:text-3xl font-bold text-gold-gradient mb-6">
               تحت سقف واحد، نُقدّم رحلة تصميم كاملة
             </h3>
-            <p className="text-gray-600 text-lg leading-relaxed mb-6">
+            <p className="text-gray-400 text-lg leading-relaxed mb-6">
             سينيور باك هي شركة رائدة في تقديم حلول التصميم الشاملة للمنتجات المادية والرقمية، نرافق علامتك التجارية منذ الفكرة الأولى وحتى وصول المنتج إلى يد العميل.
             </p>
-            <p className="text-gray-600 text-lg leading-relaxed mb-8">
+            <p className="text-gray-400 text-lg leading-relaxed mb-8">
             تحت سقف واحد، نجمع خبرات متعددة في مجالات تصميم المنتجات، تطوير أشكالها الخارجية، ابتكار التغليف المميز، الطباعة الاحترافية، تصميم المواقع والتطبيقات، وبناء الهوية البصرية القوية للسوشيال ميديا.
             </p>
-            <p className="text-gray-600 text-lg leading-relaxed mb-8">
+            <p className="text-gray-400 text-lg leading-relaxed mb-8">
             في سينيور باك، لا نقدم خدمة واحدة، بل نصنع رحلة تصميم متكاملة ترتقي بمنتجك إلى المعايير الأوروبية، مع لمستنا الخاصة التي تمنحه طابعاً فريداً يلفت الأنظار ويضمن تميّزه في السوق.
             </p>
             <div className="flex items-center hidden sm:block">
@@ -76,7 +76,7 @@ const About = () => {
                   <div className="h-32 relative rounded-2xl overflow-hidden flex items-center justify-center border border-gray-100">
                     <div
                       className="absolute inset-0 bg-cover bg-center"
-                      style={{ backgroundImage: "url('/images/about/packagin.png')" }}
+                      style={{ backgroundImage: "url('/images/about/packaging.png')" }}
                     ></div>
                     <div className="absolute inset-0 bg-gradient-to-br from-[#ffe2a6]/80 to-[#936e2a]/80"></div>
                     <span className="relative z-10 text-black font-semibold">تغليف احترافي</span>

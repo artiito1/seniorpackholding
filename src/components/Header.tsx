@@ -36,7 +36,7 @@ const subsidiaries = [
             </div>
             <div className="mr-3">
               <h1 className="text-[#321b12] font-bold text-lg lg:text-xl">Senior Holding Company</h1>
-              <p className="text-[#936e2a] text-xs lg:text-sm">تجربة متكاملة للمنتجات</p>
+              <p className="text-[#936e2a] text-xs lg:text-sm ">تجربة متكاملة للمنتجات</p>
             </div>
           </div>
 
@@ -85,7 +85,7 @@ const subsidiaries = [
 
           {/* CTA Button */}
           <div className="hidden lg:flex items-center">
-            <button className="bg-gradient-to-r from-[#936e2a] to-[#ffe2a6] text-white px-6 py-2.5 rounded-full font-medium hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300">
+            <button className="bg-gradient-to-r from-[#936e2a] to-[#ffe2a6] text-white px-6 py-2.5 rounded-full font-semibold hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300">
               احصل على عرض مخصص
             </button>
           </div>
@@ -137,7 +137,7 @@ const subsidiaries = [
               </div>
             ))}
             <div className="px-4 py-2">
-              <button className="w-full bg-gradient-to-r from-[#936e2a] to-[#ffe2a6] text-white px-6 py-2.5 rounded-full font-medium">
+              <button className="w-full bg-gradient-to-r from-[#936e2a] to-[#ffe2a6] text-white px-6 py-2.5 rounded-full font-semibold">
                 احصل على عرض مخصص
               </button>
             </div>

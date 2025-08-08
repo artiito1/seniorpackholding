@@ -26,7 +26,7 @@ const subsidiaries = [
 ];
 
   return (
-    <header className="bg-white/95 backdrop-blur-sm shadow-lg fixed top-0 w-full z-50 transition-all duration-300">
+    <header className="bg-gray-300 backdrop-blur-sm shadow-lg fixed top-0 w-full z-50 transition-all duration-300">
       <div className="container mx-auto px-4 lg:px-6">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}

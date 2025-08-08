@@ -15,8 +15,8 @@ const Services = () => {
     { id: 'graphics' as CategoryKey, label: 'الرسوميات', icon: Palette, gradient: 'from-[#936e2a] to-[#ffe2a6]' },
     { id: 'decoration' as CategoryKey, label: 'الديكور', icon: Palette, gradient: 'from-[#936e2a] to-[#ffe2a6]' },
     { id: 'marketing' as CategoryKey, label: 'التسويق', icon: Search, gradient: 'from-[#936e2a] to-[#ffe2a6]' },
-    { id: 'photography' as CategoryKey, label: 'التصوير', icon: Camera, gradient: 'from-[#936e2a] to-[#ffe2a6]' },
     { id: 'threed' as CategoryKey, label: 'ثلاثي الأبعاد', icon: Box, gradient: 'from-[#936e2a] to-[#ffe2a6]' },
+    { id: 'photography' as CategoryKey, label: 'التصوير', icon: Camera, gradient: 'from-[#936e2a] to-[#ffe2a6]' },
     { id: 'programming' as CategoryKey, label: 'البرمجة', icon: Code, gradient: 'from-[#936e2a] to-[#ffe2a6]' }
   ];
 
@@ -24,28 +24,25 @@ const Services = () => {
     title: string;
     description: string;
     features: string[];
-    bgUrl: string;
+
   }>> = {
     printing: [
       {
         title: 'طباعة مواد التعبئة والتغليف',
         description: 'طباعة عالية الجودة للمواد المرنة والصلبة للمنتجات الغذائية والاستهلاكية',
-        features: ['طباعة الاكياس', 'طباعة الكرتون', 'طباعة ملصقات العبوات المعدنية', 'وضوح نصي دقيق'],
-        bgUrl: '/images/printing-bg.jpg'
+        features: ['طباعة الاكياس', 'طباعة الكرتون', 'طباعة ملصقات العبوات المعدنية', 'وضوح نصي دقيق']
       },
     ],
     graphics: [
       {
         title: 'تصميم الجرافيك والهوية البصرية',
         description: 'تحويل الأفكار إلى مرئيات مؤثرة تعزز الهوية المؤسسية للعلامات التجارية',
-        features: ['تصميم الشعارات', 'اختيار الألوان', 'تطوير الهوية المؤسسية', 'التميز في المجتمع'],
-        bgUrl: '/images/graphics-bg.jpg'
+        features: ['تصميم الشعارات', 'اختيار الألوان', 'تطوير الهوية المؤسسية', 'التميز في المجتمع']
       },
       {
         title: 'تصميم التعبئة والتغليف',
         description: 'تصميم إبداعي للتغليف كأداة تسويقية رئيسية تضمن وصول رسالة العلامة التجارية',
-        features: ['تصميم عبوات مبتكرة', 'مرئيات مقنعة', 'رسائل تجارية واضحة', 'تعزيز المبيعات'],
-        bgUrl: '/images/about/packaging.png'
+        features: ['تصميم عبوات مبتكرة', 'مرئيات مقنعة', 'رسائل تجارية واضحة', 'تعزيز المبيعات']
       }
     ],
     decoration: [
@@ -57,8 +54,7 @@ const Services = () => {
       'إدارة وتنظيم كامل لعملية التنفيذ',
       'خيارات تناسب مختلف الميزانيات',
       'تشطيبات عالية الجودة ودقة في التفاصيل'
-    ],
-        bgUrl: '/images/exhibition-bg.jpg'
+    ]
       },
       {
         title: 'التصميم الداخلي',
@@ -68,58 +64,51 @@ const Services = () => {
       'خلق بيئة مريحة وآمنة للاستخدام',
       'حلول عملية تناسب الاستخدام التجاري أو السكني',
       'دمج أحدث التقنيات في التصميم والتشطيب'
-    ],
-        bgUrl: '/images/interior-bg.jpg'
+    ]
       }
     ],
     marketing: [
       {
         title: 'تحسين محركات البحث (SEO)',
         description: 'تحسين ترتيب موقعك في محركات البحث باستخدام استراتيجيات متقدمة',
-        features: ['كلمات رئيسية استراتيجية', 'تحسين الظهور', 'زيادة الزيارات', 'تحليل الأداء'],
-        bgUrl: '/images/seo-bg.jpg'
+        features: ['كلمات رئيسية استراتيجية', 'تحسين الظهور', 'زيادة الزيارات', 'تحليل الأداء']
       },
       {
         title: 'إدارة وسائل التواصل الاجتماعي',
         description: 'تعزيز التواجد الرقمي وإنشاء محتوى جذاب لجذب العملاء',
-        features: ['إدارة المنصات الاجتماعية', 'محتوى جذاب', 'استشارات تسويقية مبتكرة', 'زيادة التفاعل'],
-        bgUrl: '/images/social-media-bg.jpg'
+        features: ['إدارة المنصات الاجتماعية', 'محتوى جذاب', 'استشارات تسويقية مبتكرة', 'زيادة التفاعل']
       }
     ],
     photography: [
       {
         title: 'تصوير المنتجات',
         description: 'تصوير احترافي يبرز جمالية المنتجات ويعزز جاذبيتها التسويقية',
-        features: ['لقطات ذكية ومبتكرة', 'إضاءة احترافية', 'تعزيز المبيعات', 'مناسب للمتاجر الإلكترونية'],
-        bgUrl: '/images/product-photography-bg.jpg'
+        features: ['لقطات ذكية ومبتكرة', 'إضاءة احترافية', 'تعزيز المبيعات', 'مناسب للمتاجر الإلكترونية']
       }
     ],
     threed: [
       {
         title: 'النمذجة ثلاثية الأبعاد',
         description: 'إنشاء تمثيل رقمي ثلاثي الأبعاد للكائنات باستخدام أحدث البرامج المتخصصة',
-        features: ['عرض الحجم والشكل', 'إظهار الملمس والتفاصيل', 'تصميمات حقيقية ومفاهيمية', 'نماذج رقمية متقدمة'],
-        bgUrl: '/images/3d-modeling-bg.jpg'
+        features: ['عرض الحجم والشكل', 'إظهار الملمس والتفاصيل', 'تصميمات حقيقية ومفاهيمية', 'نماذج رقمية متقدمة']
       }
     ],
     programming: [
       {
         title: 'تصميم وبرمجة المواقع',
         description: 'إنشاء مواقع ويب قوية تقنياً وجذابة بصرياً مع خدمات الإدارة والصيانة',
-        features: ['مواقع متجاوبة', 'تطوير التطبيقات', 'إدارة وصيانة', 'تصدر نتائج البحث', 'تحسين تجربة المستخدم'],
-        bgUrl: '/images/web-development-bg.jpg'
+        features: ['مواقع متجاوبة', 'تطوير التطبيقات', 'إدارة وصيانة', 'تصدر نتائج البحث', 'تحسين تجربة المستخدم']
       },
       {
         title: 'الخدمات التقنية المتكاملة',
         description: 'حلول شاملة تشمل الاستضافة وإعلانات جوجل وأرشفة المواقع',
-        features: ['استضافة البريد الاحترافية', 'إدارة إعلانات جوجل', 'أرشفة محركات البحث', 'تركيب وتخصيص الأنظمة','حجز أسم لموقع الشركة'],
-        bgUrl: '/images/tech-services-bg.jpg'
+        features: ['استضافة البريد الاحترافية', 'إدارة إعلانات جوجل', 'أرشفة محركات البحث', 'تركيب وتخصيص الأنظمة','حجز أسم لموقع الشركة']
       }
     ]
   };
 
   return (
-    <section id="services" className="py-16 lg:py-24 bg-[#1c1c1c] bg-[url('/images/paper-texture-dark.png')] bg-cover bg-center bg-fixed">
+    <section id="services" className="py-8 lg:py-4 bg-[#1c1c1c] bg-[url('/images/paper-texture-dark.png')] bg-cover bg-center bg-fixed">
           <div className="container mx-auto px-4 lg:px-6">
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-5xl font-bold text-gold-gradient mb-6">
@@ -139,7 +128,7 @@ const Services = () => {
                   className={`flex items-center px-4 py-3 rounded-full font-semibold transition-all duration-300 text-sm lg:text-base ${
                     activeCategory === category.id
                       ? 'bg-gradient-to-r from-[#936e2a] to-[#ffe2a6] text-white shadow-lg'
-                      : 'bg-white text-[#321b12] hover:bg-gray-100 shadow-md'
+                      : 'bg-gray-400 text-[#321b12] hover:bg-gray-100 shadow-md'
                   }`}
                 >
                   <category.icon className="w-4 h-4 lg:w-5 lg:h-5 ml-2" />
@@ -160,19 +149,19 @@ const Services = () => {
 
                   {/* المحتوى فوق الطبقة */}
                   <div className="relative z-10">
-                    <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-[#ffe2a6] transition-colors duration-300">
+                    <h3 className="text-2xl font-bold text-gray-300 mb-4 group-hover:text-[#ffe2a6] transition-colors duration-300">
                       {service.title}
                     </h3>
-                    <p className="text-white/90 text-lg leading-relaxed mb-6">
+                    <p className="text-gray-300 text-lg leading-relaxed mb-6">
                       {service.description}
                     </p>
 
                     <div className="mb-6">
-                      <h4 className="font-semibold text-white mb-3">المميزات الرئيسية:</h4>
+                      <h4 className="font-semibold text-gray-300 mb-3">المميزات الرئيسية:</h4>
                       <ul className="space-y-2">
                         {service.features.map((feature, featureIndex) => (
-                          <li key={featureIndex} className="flex items-center text-white/90">
-                            <Check className="w-4 h-4 text-[#ffe2a6] ml-2 flex-shrink-0" />
+                          <li key={featureIndex} className="flex items-center text-gray-300">
+                            <Check className="w-4 h-4 text-gray-400 ml-2 flex-shrink-0" />
                             {feature}
                           </li>
                         ))}
@@ -192,14 +181,14 @@ const Services = () => {
             </div>
 
             {/* Process Flow */}
-            <div className="mt-16 bg-white rounded-3xl p-8 lg:p-12 shadow-lg">
-              <h3 className="text-2xl lg:text-3xl font-bold text-[#321b12] text-center mb-12">
-                مراحل العمل في سينيور ديزاين
+            <div className="mt-8 bg-gradient-to-br from-[#ffe2a6]/30 to-[#936e2a]/30 rounded-3xl p-8 lg:p-12 shadow-lg">
+              <h3 className="text-2xl lg:text-3xl font-bold text-gray-300 text-center mb-12">
+                مراحل العمل في سينيور باك
               </h3>
               
               <div className="grid md:grid-cols-4 gap-8">
                 <div className="text-center group">
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#936e2a] to-[#ffe2a6] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-16 h-16 bg-gradient-to-br from-[#936e2a]/70 to-[#ffe2a6]/70 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                     <span className="text-white font-bold text-xl">1</span>
                   </div>
                   <h4 className="font-bold text-[#321b12] mb-2">دراسة المشروع</h4>
@@ -207,7 +196,7 @@ const Services = () => {
                 </div>
 
                 <div className="text-center group">
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#936e2a] to-[#ffe2a6] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-16 h-16 bg-gradient-to-br from-[#936e2a]/70 to-[#ffe2a6]/70 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                     <span className="text-white font-bold text-xl">2</span>
                   </div>
                   <h4 className="font-bold text-[#321b12] mb-2">التصميم الإبداعي</h4>
@@ -215,7 +204,7 @@ const Services = () => {
                 </div>
 
                 <div className="text-center group">
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#936e2a] to-[#ffe2a6] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-16 h-16 bg-gradient-to-br from-[#936e2a]/70 to-[#ffe2a6]/70 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                     <span className="text-white font-bold text-xl">3</span>
                   </div>
                   <h4 className="font-bold text-[#321b12] mb-2">التنفيذ المتميز</h4>
@@ -223,7 +212,7 @@ const Services = () => {
                 </div>
 
                 <div className="text-center group">
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#936e2a] to-[#ffe2a6] rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-16 h-16 bg-gradient-to-br from-[#936e2a]/70 to-[#ffe2a6]/70 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                     <span className="text-white font-bold text-xl">4</span>
                   </div>
                   <h4 className="font-bold text-[#321b12] mb-2">التسليم والدعم</h4>
